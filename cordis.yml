@@ -1,0 +1,8 @@
+# dsh 本地插件覆盖层
+# 插件路径必须是绝对路径；本文件中的路径对应当前仓库位置
+#   /Users/jackie/workspace/yishe-agent
+- insert:
+    - id: yishe-core
+      name: "/Users/jackie/workspace/yishe-agent/plugins/core/src/index.ts"
+    - id: yishe-tools
+      name: "/Users/jackie/workspace/yishe-agent/plugins/tools-yishe/src/index.ts"

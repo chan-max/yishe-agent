@@ -1,0 +1,27 @@
+{
+  "name": "yishe-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Yishe Agent - 基于 DeepSeek Harness 与 Hermes Agent 二次开发的智能体工具",
+  "workspaces": [
+    "plugins/*"
+  ],
+  "scripts": {
+    "dev": "node bin/dsh.mjs web --patch ./cordis.yml",
+    "start": "node bin/dsh.mjs web --patch ./cordis.yml --no-open",
+    "dsh": "node bin/dsh.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/dsh-tools": "0.0.1-rc.1",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
