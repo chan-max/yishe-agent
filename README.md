@@ -43,6 +43,7 @@ npm start          # 同上，但不自动打开浏览器
 | `yishe-tools` | 通过 `ctx.tools.register(defineTool(...))` 注册业务工具，首个工具为 `yishe_agent_info` |
 
 新增插件：在 `plugins/` 下建目录 → 写 `src/index.ts` → 在 `cordis.yml` 追加一条绝对路径。
+（`cordis.yml` 里的插件路径是绝对路径，仓库位置变更后需要同步修改。）
 
 ## 环境变量
 
